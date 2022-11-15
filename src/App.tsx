@@ -1,8 +1,13 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
+import { Routes, Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  return <div className="">hi</div>;
+  return (
+    <Routes>
+      <Route path="/" element={<h1>Home</h1>} />
+      <Route path="/new" element={<h1>New</h1>} />
+    </Routes>
+  );
 }
 
 export default App;
